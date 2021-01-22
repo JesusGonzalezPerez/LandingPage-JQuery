@@ -12,7 +12,7 @@ function cargar1() {
         }
     };
 
-    xhttp.open("GET", "../json/json.txt", true);
+    xhttp.open("GET", "json/json.txt", true);
     xhttp.send();
 }
 
@@ -30,7 +30,7 @@ function cargar2() {
         }
     };
 
-    xhttp.open("GET", "../json/json.txt", true);
+    xhttp.open("GET", "json/json.txt", true);
     xhttp.send();
 }
 
