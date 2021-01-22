@@ -1,0 +1,103 @@
+header{
+    border-bottom: black solid 1px;
+}
+#logo{
+    width: 12rem;
+}
+#nav{
+    display: flex;
+    align-items: center;
+}
+a.btn{
+    background-color: #da354d;
+    border: black 1px solid;
+    color:#000000;
+    font-weight: bold;
+}
+.jumbotron{
+    display:flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.17)),url("../img/hero2.jpg");
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.heroText{
+    color: rgb(214, 214, 214);
+    top: 20%;
+}
+main{
+    padding-top:2rem;
+    text-align: center;
+    background-color: #2b475f;
+    color: white;
+}
+hr{
+    background-color: azure;
+}
+#servicios h2{
+    width: 100%;
+}
+#testimonios h2{
+    width: 100%;
+}
+#servicios div{
+    width: 30rem;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100%;
+    background-color:#3d688c;
+    border-top: black solid 1px;
+    color: rgb(0, 0, 0);
+}
+footer ul{
+    width: 12rem;
+}
+footer ul li:first-child{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:#8da8c3;
+}
+footer ul li{
+    font-size: 0.8rem;
+    list-style: none;
+}
+footer ul li a{
+    color:#c9d8ec;
+}
+footer ul li:hover a{
+    color:white;
+}
+footer div{
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div .fa:hover{
+    transform: scale(1.1, 1.1);
+}
+#btnVista{
+    background-color: tomato;
+}
+@media (min-width: 623px) and (max-width: 1000px){
+    footer div{
+        width: 100%;
+        justify-content: center;
+    }
+    footer div a{
+        margin: 1rem;
+    }
+    footer{
+        font-size: 0.9rem;
+    }
+}

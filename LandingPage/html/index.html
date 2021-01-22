@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Stop</title>
+
+    <!-- JQuery  -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/png" href="..\img\favicon.png">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="../css/css.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <!-- Nav  -->
+        <nav class="navbar navbar-expand" style="justify-content: space-between">
+            <div id="nav" class="nav navbar-nav">
+                <a class="nav-item nav-link active" href="index.html"><img id="logo" src="../img/logo.png"></a>
+            </div>
+            <a name="" id="" class="btn" href="#" role="button" data-toggle="modal" data-target="#modalForm">Start Now</a>
+        </nav>
+    </header>
+
+    <!-- Imagen (Portada) -->
+    <div class="jumbotron jumbotron-fluid my-0" style="background-repeat:no-repeat">
+        <div class="container">
+            <h1 class="heroText"> Comprometidos con tu auto.</h1>
+            <h1 class="heroText"> Interesados en ti.</h1>
+        </div>
+    </div>
+
+    <!-- Main  -->
+    <main>
+        <div id="servicios">
+            <h2>Servicios</h2>
+
+        </div>
+
+        <hr>
+        <button id="btnVista" onclick="cambiarVista()">Vista Tabla</button>
+        <div id="testimonios">
+            <h2>Comentarios</h2>
+            
+        </div>
+    </main>
+
+    <!-- Footer  -->
+    <footer style="display: flex;">
+        <ul>
+            <li>Ayuda</li>
+            <li><a href="#">¿Cómo funciona?</a></li>
+            <li><a href="#">Preguntas más frecuentes</a></li>
+            <li><a href="#">Servicio de asistencia</a></li>
+        </ul>
+        <ul>
+            <li>Acerca de nosotros</li>
+            <li><a href="#">Empresa</a></li>
+        </ul>
+        <ul>
+            <li>Asociaciones</li>
+            <li><a href="#">Marcas</a></li>
+            <li><a href="#">Soporte de ventas</a></li>
+        </ul>
+        <div id="redes">
+            <a href="https://es-es.facebook.com/FirstStop.es/" alt="Facebook"><i class="fa fa-facebook-square"
+                    style="font-size:2rem;color:rgb(255, 255, 255)"></i></a>
+            <a href="https://twitter.com/FirstStop_Esp?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"
+                    style="font-size:2rem;color:rgb(255, 255, 255)"></i></a>
+            <a href="https://www.youtube.com/channel/UCi-mjxVRopKwCadgZgCwlow"><i class="fa fa-youtube-play"
+                    style="font-size:2rem;color:rgb(255, 255, 255)"></i></a>
+            <a href="https://www.instagram.com/firststop_esp/?hl=es"><i class="fa fa-instagram"
+                    style="font-size:2rem;color:rgb(255, 255, 255)"></i></a>
+        </div>
+    </footer>
+
+    <!-- Modal formulario  -->
+    <div class="modal" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Formulario</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Nombre (Min: 3Caracteres)</label>
+                        <input type="text" name="Name" id="nameForm" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+
+                        <label for="">Correo electrónico</label>
+                        <input type="text" name="Email" id="emailForm" class="form-control" placeholder="example@example.example"
+                            aria-describedby="helpId">
+
+                        <label for="">Contraseña (Min: 1Mayus, 1Minus, 1Alfanumérico)</label>
+                        <input type="password" name="Password" id="passForm1" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+
+                        <label for="">Confirmar contraseña (Min: 1Mayus, 1Minus, 1Alfanumérico)</label>
+                        <input type="password" name="Password" id="passForm2" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" id="valido" class="btn btn-segundary">Válido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
